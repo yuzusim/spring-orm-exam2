@@ -1,6 +1,5 @@
-package ex02;
+package ex02.ex02v1;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -13,7 +12,25 @@ public class App2 {
 
         List<DBData2> dbList = Arrays.asList(dbData1, dbData2, dbData3);
 
+        if (dbList.size() == 0) return;
+
         // 2. dbList(컬렉션을) ViewData2(오브젝트)에 옮기시오 - ORM
+        ViewData2 viewData2 = new ViewData2(
+                dbList.get(0).getBoardId(),
+                dbList.get(0).getTitle(),
+                dbList.get(0).getTitle()
+        );
+
+        // 디비 리스트의 크기만큼 for문 돌리기
+        for (DBData2 data : dbList) {
+            Reply r = new Reply(data.getReplyId(), data.getComment());
+            viewData2.addReply(r);
+        }
+
+
+
+
+
 
     }
 }

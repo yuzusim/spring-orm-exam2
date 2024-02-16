@@ -1,4 +1,4 @@
-package ex02;
+package ex02.ex02v2;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

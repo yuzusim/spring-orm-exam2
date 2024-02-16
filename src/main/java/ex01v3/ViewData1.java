@@ -1,5 +1,4 @@
-package ex01;
-
+package ex01v3;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,4 +13,6 @@ public class ViewData1 {
     private String content;
 
     private User user;
+
+
 }

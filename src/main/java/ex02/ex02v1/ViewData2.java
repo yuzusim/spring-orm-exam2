@@ -1,6 +1,5 @@
-package ex02;
+package ex02.ex02v1;
 
-import ex02.model.Reply;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
